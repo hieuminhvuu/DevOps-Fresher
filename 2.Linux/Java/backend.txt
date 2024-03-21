@@ -1,0 +1,8 @@
+Triển khai dự án backend trên linux
+
+    1. Cài đặt công cụ cần thiết
+    2. Xem và sửa file cấu hình => file cấu hình
+    3. Cài đặt và thiết lập database => công cụ
+    4. Build dự án => build
+    5. Run dự án => run
+    6. Kiểm tra hoạt động => check

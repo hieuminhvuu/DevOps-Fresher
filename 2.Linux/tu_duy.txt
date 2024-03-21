@@ -1,0 +1,9 @@
+Tư duy triển khai dự án :
+
+    1. Dự án nào thì có công cụ tương ứng
+    2. Chỉ cần lưu ý duy nhất file cấu hình trong dự án
+    3. Triển khai dự án cần đúng 2 bước là build và run
+
+Chú ý :
+    1. Mỗi dự án sẽ có thư mục riêng
+    2. Mỗi dự án sẽ có user riêng (tránh sử dụng trực tiếp user root để bảo mật tốt hơn)
