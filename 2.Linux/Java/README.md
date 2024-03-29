@@ -38,6 +38,12 @@ vim /etc/ssh/sshd_config
 
 <img src= images/005.png>
 
+- Chạy lệnh
+
+```
+systemctl restart sshd
+```
+
 - Mở terminal của mac lên rồi ssh tới vm thôi
 
 <img src= images/006.png>
