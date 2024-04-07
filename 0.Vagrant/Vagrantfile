@@ -1,0 +1,25 @@
+Vagrant.configure("2") do |config|
+    config.vm.define "gitlab-server" do |gitlab|
+      gitlab.vm.provider "vmware_fusion" do |vb_gitlab|
+        vb_gitlab.memory = 2048
+        vb_gitlab.cpus = 2
+      end
+  
+      gitlab.vm.box = "gyptazy/ubuntu22.04-arm64"
+      gitlab.vm.hostname = "gitlab-server"
+      gitlab.vm.network "private_network", ip: "192.168.123.158"
+  
+    end
+  
+    config.vm.define "lab-server" do |lab|
+      lab.vm.provider "virtualbox" do |vb_lab|
+        vb_lab.memory = 2048
+        vb_lab.cpus = 2
+      end
+  
+      lab.vm.box = "gyptazy/ubuntu22.04-arm64"
+      lab.vm.hostname = "lab-server"
+      lab.vm.network "private_network", ip: "192.168.123.156"
+  
+    end
+  end
