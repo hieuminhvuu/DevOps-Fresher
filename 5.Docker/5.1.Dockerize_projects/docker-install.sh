@@ -12,3 +12,7 @@ sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-
 sudo chmod +x /usr/local/bin/docker-compose
 docker --version
 docker-compose --version
+sudo groupadd docker
+sudo usermod -aG docker $USER
+newgrp docker
+docker ps
